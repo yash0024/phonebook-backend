@@ -5,7 +5,7 @@ const app = express()
 const cors = require('cors')
 
 app.use(cors())
-
+app.use(express.static('build'))
 app.use(express.json())
 const morgan = require('morgan')
 app.use(morgan('tiny'));
